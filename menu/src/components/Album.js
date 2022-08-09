@@ -15,7 +15,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Link from '@mui/material/Link';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import images from '/workspace/Food-Menu-2/menu/src/components/images';
+import Paper from '@mui/material/Paper';
 
 function Copyright() {
   return (
@@ -40,20 +40,13 @@ export default function Album() {
       <CssBaseline />
       <AppBar position="relative">
         <Toolbar>
-          <img src="https://imgs.search.brave.com/ttBpXxXKb0D0JfFPgIFlz1WFSV9bx4lkqq_2hs1deHQ/rs:fit:700:700:1/g:ce/aHR0cHM6Ly9sb2dv/cy1kb3dubG9hZC5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjAvMDYvQmx1ZV9C/aXJkX0NvcnBvcmF0/aW9uX0xvZ29fYmx1/ZS03MDB4NzAwLnBu/Zw" height="100px" width="100px"/>
+        
           
         </Toolbar>
       </AppBar>
       <main>
         {/* Hero unit */}
-        <Box
-          sx={{
-            bgcolor: 'background.paper',
-            pt: 8,
-            pb: 6,
-          }}
-        >
-          <Container maxWidth="sm">
+        <Container maxWidth="sm">
             <Typography
               component="h1"
               variant="h2"
@@ -61,12 +54,10 @@ export default function Album() {
               color="text.primary"
               gutterBottom
             >
-              Blue Birds
+              <img src="https://vignette.wikia.nocookie.net/logopedia/images/c/cd/Sobe_logo.png/revision/latest/scale-to-width-down/2000?cb=20190727172420" height="120px" width="400px"/>
             </Typography>
             <Typography variant="h5" align="center" color="text.secondary" paragraph>
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks
-              don&apos;t simply skip over it entirely.
+              Eat Plenty, Eat Healthy
             </Typography>
             <Stack
               sx={{ pt: 4 }}
@@ -74,47 +65,155 @@ export default function Album() {
               spacing={2}
               justifyContent="center"
             >
-              <Button variant="contained">Main call to action</Button>
-              <Button variant="outlined">Secondary action</Button>
+              <Button variant="contained" id="blank">Main call to action</Button>
+              <Button variant="outlined" id="blank">Secondary action</Button>
             </Stack>
           </Container>
-        </Box>
-        <Container sx={{ py: 8 }} maxWidth="md">
-          {/* End hero unit */}
-          <Grid container spacing={4}>
-            {cards.map((card) => (
-              <Grid item key={card} xs={12} sm={6} md={4}>
-                <Card
-                  sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
-                >
-                  <CardMedia
-                    component="img"
-                    sx={{
-                      // 16:9
-                      pt: '56.25%',
-                    }}
-                   
-                    image="https://imgs.search.brave.com/G-QKr_wgEgJs4DjiRmX3JNZ9kUiUbfnWtgnafgWmKos/rs:fit:1200:1200:1/g:ce/aHR0cHM6Ly93d3cu/dGFzdGVvZmhvbWUu/Y29tL3dwLWNvbnRl/bnQvdXBsb2Fkcy8y/MDE4LzAxL1dhbG51/dC1NaW5jZW1lYXQt/UGllX0VYUFNfRlQx/OV8xNzA4X0ZfMTAx/OF8xLTUuanBn"
-                    alt="random"
-                  />
-                  <CardContent sx={{ flexGrow: 1 }} id="image1">
-                    <Typography gutterBottom variant="h5" component="h2">
-                      Heading
-                    </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe the
-                      content.
-                    </Typography>
-                  </CardContent>
-                  <CardActions>
-                    <Button size="small">View</Button>
-                    <Button size="small">Edit</Button>
-                  </CardActions>
-                </Card>
-              </Grid>
-            ))}
-          </Grid>
-        </Container>
+        <Box sx={{ flexGrow: 1 }}>
+      <Grid container spacing={2}>
+        <Grid item xs={6} md={4}>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/c5d09362233188d799e295444812ed64.jpg")}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </Grid>
+        <Grid item xs={4} md={2}>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/exps6086_HB133235C07_19_4b_WEB-1.jpg")}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </Grid>
+        <Grid item xs={6} md={4}>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/southern-chicken-fingers-11.jpg")}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </Grid>
+        <Grid item xs={6} md={4}>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/exps6086_HB133235C07_19_4b_WEB-1.jpg")}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </Grid>
+        
+        <Grid item xs={6} md={8}>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/Summer-Vegetable-Soup_exps18529_HWS133216C07_11_2bC_RMS.jpg")}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+      <CardContent>
+        <Typography gutterBottom variant="h5" component="div">
+          Lizard
+        </Typography>
+        <Typography variant="body2" color="text.secondary">
+          Lizards are a widespread group of squamate reptiles, with over 6,000
+          species, ranging across all continents except Antarctica
+        </Typography>
+      </CardContent>
+      <CardActions>
+        <Button size="small">Share</Button>
+        <Button size="small">Learn More</Button>
+      </CardActions>
+    </Card>
+        </Grid>
+        <Grid item xs={6} md={4}>
+        <Card sx={{ maxWidth: 345 }}>
+      <CardMedia
+        component="img"
+        height="140"
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/exps6086_HB133235C07_19_4b_WEB-1.jpg")}
+        alt="green iguana"
+      />
+    </Card>
+    
+        </Grid>
+      </Grid>
+    </Box>
+        
       </main>
       {/* Footer */}
       <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
