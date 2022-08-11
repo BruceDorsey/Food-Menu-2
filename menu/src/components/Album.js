@@ -39,14 +39,14 @@ export default function Album() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <AppBar position="relative">
-        <Toolbar>
+        <Toolbar id="image1">
         </Toolbar>
       </AppBar>
       <main>
         {/* Hero unit */}
         <Box
           sx={{
-            bgcolor:'background.paper',
+            bgcolor:'background.paper=',
             pt:8,
             pt:6,
           }}
@@ -61,7 +61,7 @@ export default function Album() {
             >
               <img src="https://vignette.wikia.nocookie.net/logopedia/images/c/cd/Sobe_logo.png/revision/latest/scale-to-width-down/2000?cb=20190727172420" height="120px" width="400px"/>
             </Typography>
-            <Typography variant="h5" align="center" color="text.secondary" paragraph>
+            <Typography variant="h5" align="center" color="green" paragraph>
               Eat Plenty, Eat Healthy
             </Typography>
             <Stack
@@ -89,10 +89,10 @@ export default function Album() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Lizzo's Bacon Meal
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles
+          Enjoy Lizzo's Bacon Burger
         </Typography>
       </CardContent>
       <CardActions>
@@ -113,10 +113,10 @@ export default function Album() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Lizzy's Apple Pie
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles
+          
         </Typography>
       </CardContent>
       <CardActions>
@@ -137,10 +137,10 @@ export default function Album() {
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Lizard Gizzards
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles
+          Don't ask how we got the gizzards, 6,000 species of lizzards will understand.
         </Typography>
       </CardContent>
       <CardActions>
@@ -156,15 +156,15 @@ export default function Album() {
         component="img"
         height="300px"
         width="auto"
-        image={require("/workspace/Food-Menu-2/menu/src/components/images/exps6086_HB133235C07_19_4b_WEB-1.jpg")}
+        image={require("/workspace/Food-Menu-2/menu/src/components/images/Pizza-Spaghetti-Style-58a726025f9b58a3c95130c3.jpg")}
         alt="green iguana"
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div" >
-          Lizard
+          Lizzo's Spagetti Surprise
         </Typography>
         <Typography variant="body2" color="text.secondary" >
-          Lizards are a widespread group of squamate reptiles
+          
         </Typography>
       </CardContent>
       <CardActions>
@@ -213,7 +213,7 @@ export default function Album() {
           Lizzy the Lizard
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Chow down on our staple Lizzy the Lizard desert for a burst of chcolate
+          Chow down on our staple Lizzy the Lizard desert for a burst of chocolate and frosting to WOW your taste buds!
         </Typography>
       </CardContent>
       <CardActions>
@@ -228,7 +228,7 @@ export default function Album() {
         
       </main>
       {/* Footer */}
-      <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
+      <Box sx={{ bgcolor: 'background.paper', p: 1 }} component="footer">
         <Typography variant="h6" align="center" gutterBottom>
           Footer
         </Typography>
